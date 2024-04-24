@@ -18,7 +18,7 @@
 	<meta name="keywords"
 		content="app, app landing, clean, landing, landing page, marketing, marketing landing, product, product landing, responsive, seo, startup landing ">
 	<meta name="author" content="Vue Laboratories">
-	<title>MONO Travel</title>
+	<title>SIGNUP ET</title>
 	<!-- include the site stylesheet -->
 	<link
 		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7COswald:400,700"
@@ -58,7 +58,7 @@
 	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/siginup2.css">
 	<style class="color_css"></style>
 
 
@@ -108,13 +108,13 @@
 
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="index.html">HOME</a></li>
+									<li><a href="index.html">HOME </a></li>
 									<li><a href="ENTERPRISE.html">ENTERPRISE</a></li>
 									<li><a href="#">ABOUT</a></li>
 									<li><a href="contact.html">CONTACT</a></li>
-									<li><a href="signup2.html" >Sign up ET</a></li>
+									<li><a href="signup2.html" style="color: #ff9a00;">Sign up ET</a></li>
 									<li><a href="sign up enter.html">Sign up EN</a></li>
-                                    <li><a href="login.html" style="color: #ff9a00;">LOG IN</a></li>
+									<li><a href="login.html" >LOG <INp></INp></a></li>
 
 								</ul>
 							</div>
@@ -129,12 +129,20 @@
 			<main>
 				<section class="wrapper2">
 					<div class="form signup">
-						<header>Login</header>
-						<form action="login.php" method="post">
-							<input type="text" name="email" placeholder="Email" required />
+						<header>Signup</header>
+						<form action="signupStudent.php" method="post"> <!-- Specify the action and method for the form -->
+							<input type="text" name="full_name" placeholder="Full name" required /> <!-- Add name attribute to each input field -->
+							<input type="email" name="email" placeholder="Email" required /> <!-- Change type to email for email field -->
 							<input type="password" name="password" placeholder="Password" required />
-							<input type="submit" value="Login" />
-							<input type="submit" value="signup" />
+							<input type="password" name="confirm_password" placeholder="Confirm Password" required /> <!-- Corrected input type -->
+							<input type="text" name="address" placeholder="Address" required /> <!-- Corrected input type -->
+							<input type="tel" name="phone" placeholder="Phone Number" required /> <!-- Corrected input type -->
+							<input type="date" name="date_of_birth" placeholder="Date of Birth" required /> <!-- Corrected input type -->
+							<div class="checkbox">
+								<input type="checkbox" id="signupCheck" required /> <!-- Add required attribute to enforce checkbox selection -->
+								<label for="signupCheck">I accept all terms & conditions</label>
+							</div>
+							<input type="submit" value="Signup" />
 						</form>
 					</div>
 				</section>
